@@ -41,6 +41,21 @@
 		0CC004D11981E631008E24FD /* ComplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC004D01981E631008E24FD /* ComplementaryViewController.m */; };
 		0CC004D41981E74C008E24FD /* TriadicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC004D31981E74C008E24FD /* TriadicViewController.m */; };
 		0CC004D8198227DF008E24FD /* Row4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC004D7198227DF008E24FD /* Row4ViewController.m */; };
+		404E15851B7F201900712F6D /* ChameleoniOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 404E15841B7F201900712F6D /* ChameleoniOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404E15971B7F201900712F6D /* ChameleoniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404E15801B7F201800712F6D /* ChameleoniOS.framework */; };
+		404E15981B7F201900712F6D /* ChameleoniOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 404E15801B7F201800712F6D /* ChameleoniOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		404E15A01B7F205100712F6D /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D76051B0012E80062A647 /* ChameleonStatusBar.m */; };
+		404E15A11B7F205100712F6D /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D76071B0012E80062A647 /* NSArray+Chameleon.m */; };
+		404E15A21B7F205100712F6D /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D76091B0012E80062A647 /* UIColor+Chameleon.m */; };
+		404E15A31B7F205100712F6D /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D760B1B0012E80062A647 /* UIColor+CIELAB.m */; };
+		404E15A41B7F205100712F6D /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D760D1B0012E80062A647 /* UIViewController+Chameleon.m */; };
+		404E15A51B7F206600712F6D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D76021B0012E80062A647 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404E15A61B7F206600712F6D /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D76031B0012E80062A647 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404E15A71B7F206600712F6D /* ChameleonStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D76041B0012E80062A647 /* ChameleonStatusBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404E15A81B7F206600712F6D /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D76061B0012E80062A647 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404E15A91B7F206600712F6D /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D76081B0012E80062A647 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404E15AA1B7F206600712F6D /* UIColor+CIELAB.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D760A1B0012E80062A647 /* UIColor+CIELAB.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		404E15AB1B7F206600712F6D /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D760C1B0012E80062A647 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +66,28 @@
 			remoteGlobalIDString = 0CC0045F19812351008E24FD;
 			remoteInfo = ChameleonDemo;
 		};
+		404E15951B7F201900712F6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC0045819812351008E24FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404E157F1B7F201800712F6D;
+			remoteInfo = ChameleoniOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		404E159E1B7F201900712F6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				404E15981B7F201900712F6D /* ChameleoniOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C3D76021B0012E80062A647 /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
@@ -108,6 +144,9 @@
 		0CC004D31981E74C008E24FD /* TriadicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriadicViewController.m; sourceTree = "<group>"; };
 		0CC004D6198227DF008E24FD /* Row4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Row4ViewController.h; sourceTree = "<group>"; };
 		0CC004D7198227DF008E24FD /* Row4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Row4ViewController.m; sourceTree = "<group>"; };
+		404E15801B7F201800712F6D /* ChameleoniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleoniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		404E15831B7F201900712F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404E15841B7F201900712F6D /* ChameleoniOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChameleoniOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CC0046619812351008E24FD /* CoreGraphics.framework in Frameworks */,
+				404E15971B7F201900712F6D /* ChameleoniOS.framework in Frameworks */,
 				0CC0046819812351008E24FD /* UIKit.framework in Frameworks */,
 				0CC0046419812351008E24FD /* Foundation.framework in Frameworks */,
 			);
@@ -131,6 +171,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		404E157C1B7F201800712F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -139,6 +186,7 @@
 			children = (
 				0CC0046919812351008E24FD /* ChameleonDemo */,
 				0CC0048819812352008E24FD /* ChameleonDemoTests */,
+				404E15811B7F201900712F6D /* ChameleoniOS */,
 				0CC0046219812351008E24FD /* Frameworks */,
 				0CC0046119812351008E24FD /* Products */,
 			);
@@ -149,6 +197,7 @@
 			children = (
 				0CC0046019812351008E24FD /* ChameleonDemo.app */,
 				0CC0048119812352008E24FD /* ChameleonDemoTests.xctest */,
+				404E15801B7F201800712F6D /* ChameleoniOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,7 +316,42 @@
 			name = Row3Controllers;
 			sourceTree = "<group>";
 		};
+		404E15811B7F201900712F6D /* ChameleoniOS */ = {
+			isa = PBXGroup;
+			children = (
+				404E15841B7F201900712F6D /* ChameleoniOS.h */,
+				404E15821B7F201900712F6D /* Supporting Files */,
+			);
+			path = ChameleoniOS;
+			sourceTree = "<group>";
+		};
+		404E15821B7F201900712F6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				404E15831B7F201900712F6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		404E157D1B7F201800712F6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E15851B7F201900712F6D /* ChameleoniOS.h in Headers */,
+				404E15A51B7F206600712F6D /* Chameleon.h in Headers */,
+				404E15A61B7F206600712F6D /* ChameleonMacros.h in Headers */,
+				404E15A71B7F206600712F6D /* ChameleonStatusBar.h in Headers */,
+				404E15A81B7F206600712F6D /* NSArray+Chameleon.h in Headers */,
+				404E15A91B7F206600712F6D /* UIColor+Chameleon.h in Headers */,
+				404E15AA1B7F206600712F6D /* UIColor+CIELAB.h in Headers */,
+				404E15AB1B7F206600712F6D /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0CC0045F19812351008E24FD /* ChameleonDemo */ = {
@@ -277,10 +361,12 @@
 				0CC0045C19812351008E24FD /* Sources */,
 				0CC0045D19812351008E24FD /* Frameworks */,
 				0CC0045E19812351008E24FD /* Resources */,
+				404E159E1B7F201900712F6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				404E15961B7F201900712F6D /* PBXTargetDependency */,
 			);
 			name = ChameleonDemo;
 			productName = ChameleonDemo;
@@ -305,6 +391,24 @@
 			productReference = 0CC0048119812352008E24FD /* ChameleonDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		404E157F1B7F201800712F6D /* ChameleoniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404E159D1B7F201900712F6D /* Build configuration list for PBXNativeTarget "ChameleoniOS" */;
+			buildPhases = (
+				404E157B1B7F201800712F6D /* Sources */,
+				404E157C1B7F201800712F6D /* Frameworks */,
+				404E157D1B7F201800712F6D /* Headers */,
+				404E157E1B7F201800712F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleoniOS;
+			productName = ChameleoniOS;
+			productReference = 404E15801B7F201800712F6D /* ChameleoniOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,6 +420,9 @@
 				TargetAttributes = {
 					0CC0048019812352008E24FD = {
 						TestTargetID = 0CC0045F19812351008E24FD;
+					};
+					404E157F1B7F201800712F6D = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -334,6 +441,7 @@
 			targets = (
 				0CC0045F19812351008E24FD /* ChameleonDemo */,
 				0CC0048019812352008E24FD /* ChameleonDemoTests */,
+				404E157F1B7F201800712F6D /* ChameleoniOS */,
 			);
 		};
 /* End PBXProject section */
@@ -361,6 +469,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CC0048D19812352008E24FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E157E1B7F201800712F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +513,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		404E157B1B7F201800712F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E15A01B7F205100712F6D /* ChameleonStatusBar.m in Sources */,
+				404E15A11B7F205100712F6D /* NSArray+Chameleon.m in Sources */,
+				404E15A21B7F205100712F6D /* UIColor+Chameleon.m in Sources */,
+				404E15A31B7F205100712F6D /* UIColor+CIELAB.m in Sources */,
+				404E15A41B7F205100712F6D /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -405,6 +532,11 @@
 			isa = PBXTargetDependency;
 			target = 0CC0045F19812351008E24FD /* ChameleonDemo */;
 			targetProxy = 0CC0048619812352008E24FD /* PBXContainerItemProxy */;
+		};
+		404E15961B7F201900712F6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404E157F1B7F201800712F6D /* ChameleoniOS */;
+			targetProxy = 404E15951B7F201900712F6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -578,6 +710,63 @@
 			};
 			name = Release;
 		};
+		404E15991B7F201900712F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChameleoniOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		404E159A1B7F201900712F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ChameleoniOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +796,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		404E159D1B7F201900712F6D /* Build configuration list for PBXNativeTarget "ChameleoniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404E15991B7F201900712F6D /* Debug */,
+				404E159A1B7F201900712F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
