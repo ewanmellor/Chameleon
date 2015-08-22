@@ -468,7 +468,12 @@
             
             //Convert our CALayer to a UIImage object
             UIGraphicsBeginImageContextWithOptions(backgroundGradientLayer.bounds.size,NO, [UIScreen mainScreen].scale);
-            [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+            CGContextRef ctx = UIGraphicsGetCurrentContext();
+            if (ctx == NULL) {
+                return nil;
+            }
+
+            [backgroundGradientLayer renderInContext:ctx];
             UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
         
@@ -478,7 +483,11 @@
             
         case UIGradientStyleRadial: {
             UIGraphicsBeginImageContextWithOptions(frame.size,NO, [UIScreen mainScreen].scale);
-            
+            CGContextRef ctx = UIGraphicsGetCurrentContext();
+            if (ctx == NULL) {
+                return nil;
+            }
+
             //Specific the spread of the gradient (For now this gradient only takes 2 locations)
             CGFloat locations[2] = {0.0, 1.0};
 
@@ -495,7 +504,7 @@
             float myRadius = MIN(frame.size.width, frame.size.height) * 1.0;
             
             // Draw our Gradient
-            CGContextDrawRadialGradient (UIGraphicsGetCurrentContext(), myGradient, myCentrePoint,
+            CGContextDrawRadialGradient (ctx, myGradient, myCentrePoint,
                                          0, myCentrePoint, myRadius,
                                          kCGGradientDrawsAfterEndLocation);
             
@@ -519,7 +528,12 @@
             
             //Convert our CALayer to a UIImage object
             UIGraphicsBeginImageContextWithOptions(backgroundGradientLayer.bounds.size,NO, [UIScreen mainScreen].scale);
-            [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+            CGContextRef ctx = UIGraphicsGetCurrentContext();
+            if (ctx == NULL) {
+                return nil;
+            }
+
+            [backgroundGradientLayer renderInContext:ctx];
             UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
             
